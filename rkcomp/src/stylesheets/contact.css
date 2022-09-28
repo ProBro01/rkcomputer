@@ -1,0 +1,85 @@
+@import "./App.css";
+
+.contact__section{
+}
+
+.contact__details-cont{
+    display: flex;
+}
+
+.contact__info-cont{
+    position: relative;
+    width: 30%;
+    background-color: var(--dark-blue);
+    color: white;
+    height: 100%;
+    padding: 3em 3em;
+    overflow: hidden;
+}
+
+.contact__info-head{
+    padding-bottom: 2em;
+}
+
+.contact__info-head>p:nth-child(1){
+    font-size: var(--subheading-size);
+}
+
+.contact__info{
+    margin: 4em 0 0 0;
+}
+
+.contact__info>p{
+    margin: 3em 0;
+    font-size: 1rem;
+    display: flex;
+}
+
+.contact__info>p>span{
+    font-size: 1.2rem;
+    margin: 0 12px 0px 0px;
+}
+
+.contact__social-media{
+    margin: 6em 0 0 0;
+}
+
+.contact__social-media>span{
+    font-size: 1.5em;
+    margin: 2em 1em 0em 0em;
+    cursor: pointer;
+}
+
+.contact__shapes-cont{
+    position: absolute;
+    /* overflow: hidden; */
+    right: 0;
+    bottom: 0;
+}
+
+.contact__green-circle{
+    background-color: #56e0b2a3;
+    height: 100px;
+    z-index: 1;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    left: -130px;
+}
+
+.contact__circle-quadrant{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    background-color: var(--light-blue);
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.contact__map_cont>iframe{
+    height: 400px;
+    width: 100%;
+    border: none;
+}

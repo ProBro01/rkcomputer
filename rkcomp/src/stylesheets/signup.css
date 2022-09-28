@@ -1,0 +1,18 @@
+.signup_form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.input_field_container{
+    position: relative;
+    width: 100%;
+}
+
+.input__error{
+    position: absolute;
+    color: red;
+    top: -20px;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}

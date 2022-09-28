@@ -1,0 +1,82 @@
+@import "./App.css";
+
+.userinfo__heading{
+    color: var(--primary-blue);
+    text-transform: uppercase;
+}
+
+.userinfo__selectionbox{
+    width: 100%;
+}
+
+.userinfo__address-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.userinfo__address-cont p{
+    color: var(--primary-blue);
+}
+
+.userinfo__gender-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.userinfo__gender-cont p{
+    color: var(--primary-blue);
+}
+
+.userinfo__proficient-skill{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.userinfo__proficiency-tag-cont{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.userinfo__proficiency-tag{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    margin-right: 10px;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--light-blue);
+}
+
+.userinfo__proficiency-tag div{
+    margin-right: 8px;
+}
+
+.userinfo__buttons{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.userinfo__buttons p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--light-blue);
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+.userinfo__buttons p:hover{
+    color: var(--primary-blue);
+}

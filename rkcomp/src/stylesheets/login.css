@@ -1,0 +1,165 @@
+@import "./App.css";
+
+.login-container{
+    display: flex;
+}
+
+.heading{
+    color: var(--primary-blue);
+    text-transform: uppercase;
+}
+
+.login__form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-form-cont{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.logo-img-container{
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.logoimg{
+    max-width: 3em;
+    max-height: 3em;
+}
+
+.login-image-container{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--primary-blue);
+}
+
+.login-form-img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.login-form{
+    /* border: 1px solid var(--border-color);
+    box-shadow: 0px 0px 6px var(--border-color); */
+    padding: 1.5em;
+    width: 50%;
+    row-gap: 24px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form-fogot-pass{
+    width: 100%;
+    color: var(--primary-blue-light);
+}
+
+.login__form-fogot-pass p{
+    display: inline;
+    cursor: pointer;
+}
+
+.login__form-fogot-pass p:hover{
+    color: var(--primary-blue);
+}
+
+.login-image-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.institue-name{
+    text-align: center;
+    color: var(--white-color);
+    font-size: var(--subheading-size);
+}
+
+.institue-name span{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--heading-size);
+    letter-spacing: 2px;
+}
+
+.login__form-button-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-form-signin-opt-head{
+    color: var(--light-text-color);
+    border: 1px solid var(--border-color);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0px 0px 7px var(--border-color);
+}
+
+.login__form-sign-in{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.google-button{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-font);
+    background-color: #E66262;
+    color: white;
+    border: none;
+    padding: 0.5em 2em;
+    font-size: 1rem;
+}
+
+.google-button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    padding-right: 7px;
+    border-right: 1px solid white;
+}
+
+.facebook-button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    background-color: #5B7CE6;
+    color: white;
+    padding: 0.5em 2em;
+    border: none;
+}
+
+.facebook-button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    padding-right: 7px;
+    border-right: 1px solid white;
+}

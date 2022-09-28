@@ -1,0 +1,125 @@
+.navbar__container{
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top:0;
+    justify-content: space-between;
+    padding: 0.7rem 0.5rem;
+}
+
+.navbar__container-shadow{
+    box-shadow: 0px 2px 6px var(--dark-gray);
+}
+
+.navbar__logo{
+    padding-left: 1em;
+    padding-top: 0.5em;
+    width: 60px;
+}
+
+.navbar__link-cont{
+    margin-top: 0.5em;
+    padding-right: 1em;
+    display: flex;
+}
+
+.navbar__links{
+    margin-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__link-item{
+    color: var(--light-text-color);
+    text-decoration: none;
+    width: 7rem;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__link-item:hover{
+    color: white;
+    background-color: var(--light-blue);
+}
+
+/* footer */
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.footer__container>p{
+    margin-top: 1%;
+    text-transform: uppe rcase;
+    font-size: var(--subheading-size);
+    font-weight: bold;
+}
+
+.footer__social-media-icons{
+    display: flex;
+    column-gap: 3rem;
+    margin-top: 5%;
+    font-size: 1.5rem;    
+}
+
+.footer__copyright{
+    margin-top: 5%;
+}
+
+.social-icon:hover{
+    color: var(--primary-blue);
+}
+
+/* loginusericon */
+
+.loggedinusericon__cont{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.loggedinusericon__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.loggedinusericon__menu{
+    width: 150px;
+    right: 0%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 6px var(--border-color);
+    border: 1px solid var(--border-color);
+    background-color: white;
+    position: absolute;
+}
+
+.loggedinusericon__menu li{
+    color: var(--primary-blue);
+    cursor: pointer;
+    padding: 1em 1em;
+    list-style: none;
+}
+
+.loggedinusericon__menu li:hover{
+    background-color: var(--extra-light-blue);  
+}
+
+.loggedinusericon__logout{
+    cursor: pointer;
+    padding: 1em 1em;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--red-color);
+}
