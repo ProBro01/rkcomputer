@@ -11,6 +11,10 @@ import "../../stylesheets/home.css"
 // hooks
 
 export const Home = () => {
+
+  useEffect(() => {
+  }, [])
+
   return (
     <>
       <div className='home__container'>

@@ -8,6 +8,7 @@ import { Course } from "./components/course/Course.js"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Provider } from "react-redux"
 import { Store } from "./Store.js"
+import { E500 } from "./components/Notfound404.js"
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
             <Route path="about" element={<About />} />
           </Route>
           <Route path="/auth/*" element={<Authenticationpage />} />
+          <Route path="/error" element={<Page />}>
+            <Route path="internalservererror" element={<E500 />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Provider>

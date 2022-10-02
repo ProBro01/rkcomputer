@@ -9,7 +9,6 @@ function getErrorJson(err) {
 }
 
 export async function signupController(req, res) {
-    console.log(req.body)
     try {
         // create the user from the provided data
         var newuser = new userModel({

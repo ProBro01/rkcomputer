@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import "./images.model.js"
+import { imageModel } from "./images.model.js";
 
 var enrolledCourseSchema = new mongoose.Schema({
     course_id: mongoose.ObjectId,
@@ -51,7 +53,9 @@ var userSchema = new mongoose.Schema({
     age: {
         type: Number
     },
-    image_id: mongoose.ObjectId,
+    image_id: {
+        type : mongoose.ObjectId
+    },
     last_login: Date,
     otp: {
         type: String,
@@ -79,6 +83,12 @@ var userSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     }
+})
+
+userSchema.method('saveImageUrl', async function(img_id) {
+    var img = new imageModel({image_string : img_id})
+    img = await img.save()
+    return img
 })
 
 export const userModel = mongoose.model('User', userSchema)

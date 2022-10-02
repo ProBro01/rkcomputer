@@ -9,3 +9,13 @@ export const Notfound404 = (props) => {
         </>
     )
 }
+
+export const E500 = (props) => {
+    return (
+        <>
+            <div>
+                500 Internal server Error
+            </div>
+        </>
+    )
+}
